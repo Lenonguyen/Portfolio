@@ -1,0 +1,18 @@
+.landing {
+        padding: 25rem 0;
+        position: relative;
+        height: 70vh;
+        &__icon {
+            position: absolute;
+            top:  50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__title {
+            position: absolute;
+            top:  75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+}

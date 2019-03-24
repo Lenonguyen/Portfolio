@@ -1,0 +1,28 @@
+:root {
+    --color-dark: #333333;
+    --color-white: #FAFAFA;
+}
+
+
+*,
+*::after,
+*::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: inherit;
+     color: var(--color-dark);
+}
+
+html {
+    font-size: 62.5%; // 10/16 = 62.5%; 1rem = 10px
+}
+
+body {
+    background-color: var(--color-white);
+    box-sizing: border-box;
+    padding: 0 3rem;
+}
+
+a {
+    text-decoration: none;
+}
