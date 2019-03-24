@@ -1,0 +1,19 @@
+:root {
+    --color-dark: #333333;
+    --color-white: #FAFAFA;
+}
+*,
+*::after,
+*::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: inherit;
+     color: var(--color-dark);
+}
+
+html {
+    font-size: 75%; // 12/16 = 75%; 1rem = 12px
+}
+body {
+    background-color: var(--color-white);
+}

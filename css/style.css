@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  margin: 3.3rem 3.3rem 0 3.3rem;
+  justify-content: space-between; }
+  .header__text-box {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    width: 30%;
+    letter-spacing: 1.5px; }
+  .header__text-link:visited, .header__text-link:link {
+    text-decoration: none;
+    color: var(--color-dark); }
+
+:root {
+  --color-dark: #333333;
+  --color-white: #FAFAFA; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: var(--color-dark); }
+
+html {
+  font-size: 75%; }
+
+body {
+  background-color: var(--color-white); }
+
+body {
+  font-family: "IBM Plex Sans", "Montserrat"; }
+
+.active {
+  font-weight: 700; }
