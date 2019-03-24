@@ -24,18 +24,18 @@
         </header>
         <section class='contact'>
             <h1 class='heading-2 contact__heading'>Get in touch with me</h1>
-            <form method="POST" action="localhost:5000/sendMail" class='form'>
+            <form method="POST" action="/sendMail" class='form'>
                     <div class="form__group">
                         <label for="name" class="form__label">Your name:</label>
-                        <input type="text" class="form__input"  id="name" required>
+                        <input type="text" class="form__input" name="name" id="name" required>
                     </div>
                     <div class="form__group">
                         <label for="email" class="form__label">Email:</label>
-                        <input type="text" class="form__input"  id="email" required>
+                        <input type="text" class="form__input" name="email" id="email" required>
                     </div>
                     <div class="form__group">
                         <label for="message" class="form__label">Tell me something:</label>
-                        <input type="textarea" class="form__input"  id="message" required>   
+                        <input type="textarea" class="form__input" name="message" id="message" required>   
                      </div>
                     <div class=form__group>
                         <button class="form__btn" type="submit">Submit</button>

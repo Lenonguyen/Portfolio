@@ -92,11 +92,11 @@ body {
 
 .about {
   display: grid;
-  height: 50vh;
+  height: 60vh;
   grid-template-columns: repeat(3, minmax(1fr, min-content));
   grid-template-rows: minmax(max-content, 800px);
-  grid-column-gap: 5rem;
-  padding: 10rem 15rem; }
+  grid-column-gap: 7rem;
+  padding: 10rem 4rem; }
   .about__img-holder {
     grid-column: 1; }
   .about__info {
@@ -153,3 +153,11 @@ body {
     margin-top: 5rem; }
   .form > * {
     margin-bottom: 3rem; }
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem 10rem;
+  align-content: space-around;
+  text-align: center; }

@@ -23,6 +23,7 @@ sendMail = (from, to, subject, text, html) => {
     try {
         transporter.sendMail(mailOptions, (err, info) => {
             const time = new Date();
+            console.log('Sent');
             if (err) {
                 result = new Error('error!');
             } else {

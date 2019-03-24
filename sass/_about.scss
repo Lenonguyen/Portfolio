@@ -1,10 +1,10 @@
 .about {
     display: grid;
-    height: 50vh;
+    height: 60vh;
     grid-template-columns: repeat(3, minmax(1fr, min-content));
     grid-template-rows: minmax(max-content, 800px);
-    grid-column-gap: 5rem;
-    padding: 10rem 15rem;
+    grid-column-gap: 7rem;
+    padding: 10rem 4rem;
 
     &__img-holder {
         grid-column: 1;
@@ -15,7 +15,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
     }
 
     &__experience {
@@ -31,9 +30,5 @@
         object-fit: cover;
         display: block;
     }
-
-}
-
-.social {
 
 }
