@@ -10,8 +10,10 @@
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "server": "nodemon index.js"
   },
+  "proxy": "http://localhost:5000",
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -24,6 +26,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "nodemailer": "^5.1.1"
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7"
   }
 }

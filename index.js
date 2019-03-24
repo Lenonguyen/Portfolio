@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const mailServices = require('./mail');
 const key = require('./key');
@@ -8,8 +9,14 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
+
+app.use(express.static(path.join(__dirname)));
+
+app.get('/', (req,res) => {
+    res.send('Hello');
+});
 
 app.post('/sendMail', (req,res)=>{
     console.log(req.body);
@@ -20,7 +27,11 @@ app.post('/sendMail', (req,res)=>{
     if (result1 === "Error" || result2 === "Error") {
         res.sendStatus(500);
     }
+    else {
+        res.sendFile(path.join(__dirname+'/mail.html'));
+        console.log(req.body);
+    }
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {console.log('Server started')});
 

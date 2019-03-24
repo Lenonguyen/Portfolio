@@ -43,7 +43,8 @@ body {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 4.8rem;
-  color: var(--color-dark); }
+  color: var(--color-dark);
+  margin-top: 10rem; }
 
 .heading-2 {
   font-family: "Montserrat";
@@ -118,7 +119,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20rem 20rem;
+  padding: 13rem 20rem 0 20rem;
   align-content: space-around; }
   .contact > * {
     margin-bottom: 5rem; }
